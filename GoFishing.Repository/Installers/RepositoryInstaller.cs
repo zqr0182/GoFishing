@@ -14,7 +14,7 @@ namespace GoFishing.Repository.Installers
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            container.Register(Component.For(typeof(GoFishingRepository<>)).ImplementedBy(typeof(GoFishingRepository<>)).LifestylePerWebRequest(),
+            container.Register(Component.For(typeof(IRepository<>)).ImplementedBy(typeof(GoFishingRepository<>)).LifestylePerWebRequest(),
                  Component.For<IUnitOfWork>().ImplementedBy<GoFishingUnitOfWork>().LifestylePerWebRequest(),              
                  Component.For<GoFishingContext>().ImplementedBy<GoFishingContext>().LifestylePerWebRequest());
         }

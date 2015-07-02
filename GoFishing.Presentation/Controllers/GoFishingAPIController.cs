@@ -5,13 +5,24 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
+using GoFishing.Application.Services;
+
 namespace GoFishing.Presentation.Controllers
 {
-    public class TripController : ApiController
+    public class GoFishingAPIController : ApiController
     {
+        private readonly IFishingService _fishingService;
+
+        public GoFishingAPIController(IFishingService fishingService)
+        {
+            _fishingService = fishingService;
+        }
+        
         // GET api/values
         public IEnumerable<string> Get()
         {
+            var result = _fishingService.GetTrips();
+            
             return new string[] { "value1", "value2" };
         }
 

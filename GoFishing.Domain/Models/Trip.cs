@@ -12,14 +12,14 @@ namespace GoFishing.Domain.Models
     public partial class Trip : IEntity
     {
         [Key]
-        [Column("id", TypeName = "int")]
+        [Column("id")]
         public int Id { get; set; }
-        [Column("boat_name", TypeName = "nvarchar")]
+        [Column("boat_name")]
         [MaxLength(50)]
         public string BoatName { get; set; }
-        [Column("date", TypeName = "datetime")]
+        [Column("date")]
         public DateTime Date { get; set; }
-        [Column("creation_date", TypeName = "datetime")]
+        [Column("creation_date")]
         public DateTime CreationDate { get; set; }
     }
 }

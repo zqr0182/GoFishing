@@ -16,66 +16,66 @@ namespace GoFishing.Presentation.Tests.Controllers
         [TestMethod]
         public void Get()
         {
-            // Arrange
-            TripController controller = new TripController();
+            //// Arrange
+            //GoFishingAPIController controller = new GoFishingAPIController();
 
-            // Act
-            IEnumerable<string> result = controller.Get();
+            //// Act
+            //IEnumerable<string> result = controller.Get();
 
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual(2, result.Count());
-            Assert.AreEqual("value1", result.ElementAt(0));
-            Assert.AreEqual("value2", result.ElementAt(1));
+            //// Assert
+            //Assert.IsNotNull(result);
+            //Assert.AreEqual(2, result.Count());
+            //Assert.AreEqual("value1", result.ElementAt(0));
+            //Assert.AreEqual("value2", result.ElementAt(1));
         }
 
         [TestMethod]
         public void GetById()
         {
-            // Arrange
-            TripController controller = new TripController();
+            //// Arrange
+            //GoFishingAPIController controller = new GoFishingAPIController();
 
-            // Act
-            string result = controller.Get(5);
+            //// Act
+            //string result = controller.Get(5);
 
-            // Assert
-            Assert.AreEqual("value", result);
+            //// Assert
+            //Assert.AreEqual("value", result);
         }
 
         [TestMethod]
         public void Post()
         {
-            // Arrange
-            TripController controller = new TripController();
+            //// Arrange
+            //GoFishingAPIController controller = new GoFishingAPIController();
 
-            // Act
-            controller.Post("value");
+            //// Act
+            //controller.Post("value");
 
-            // Assert
+            //// Assert
         }
 
         [TestMethod]
         public void Put()
         {
-            // Arrange
-            TripController controller = new TripController();
+        //    // Arrange
+        //    GoFishingAPIController controller = new GoFishingAPIController();
 
-            // Act
-            controller.Put(5, "value");
+        //    // Act
+        //    controller.Put(5, "value");
 
-            // Assert
+        //    // Assert
         }
 
         [TestMethod]
         public void Delete()
         {
-            // Arrange
-            TripController controller = new TripController();
+            //// Arrange
+            //GoFishingAPIController controller = new GoFishingAPIController();
 
-            // Act
-            controller.Delete(5);
+            //// Act
+            //controller.Delete(5);
 
-            // Assert
+            //// Assert
         }
     }
 }

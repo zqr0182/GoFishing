@@ -25,6 +25,7 @@ namespace GoFishing.Application.Services
 
         public List<Trip> GetTrips()
         {
+
             return _unitOfWork.Trips.MatcheAll().ToList();
         }
     }
