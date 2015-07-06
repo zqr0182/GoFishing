@@ -42,7 +42,7 @@ namespace GoFishing.Presentation
                                                         FromAssembly.Containing<WebApiInstaller>(),
                                                         FromAssembly.Containing<ServicesInstaller>());
         
-            GlobalConfiguration.Configuration.DependencyResolver = new DependencyResolver(_container.Kernel);
+            GlobalConfiguration.Configuration.DependencyResolver = new WebApiInstaller.WindsorWebApiDependencyResolver(_container.Kernel);
         }
     }
 }

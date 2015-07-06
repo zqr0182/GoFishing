@@ -10,7 +10,7 @@
 namespace GoFishing.Presentation {
     
     
-    public partial class trip {
+    public partial class Fishing {
         
         /// <summary>
         /// PlaceHolder1 control.

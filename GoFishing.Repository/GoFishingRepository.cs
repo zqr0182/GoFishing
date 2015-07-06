@@ -12,6 +12,7 @@ namespace GoFishing.Repository
     public interface IRepository<T> where T : class, IEntity
     {
         IQueryable<T> MatcheAll();
+        T MatcheById(int id);
         void Add(T newEntity);
         void Remove(T entity);
     }
@@ -29,6 +30,11 @@ namespace GoFishing.Repository
         public IQueryable<T> MatcheAll()
         {
             return _dbSet;
+        }
+
+        public virtual T MatcheById(int id)
+        {
+            return _dbSet.SingleOrDefault(o => o.Id == id);
         }
        
         public void Add(T newEntity)

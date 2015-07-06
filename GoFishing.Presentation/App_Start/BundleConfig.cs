@@ -23,6 +23,16 @@ namespace GoFishing.Presentation
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            //angular
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                        "~/Scripts/angular.js",
+                        "~/Scripts/angular-route.js",
+                        "~/Scripts/angular-resource.js",
+                        "~/App/js/app.js",
+                        "~/App/js/controllers/trip-controller.js",
+                        "~/App/js/fishingSvc.js",
+                        "~/Scripts/bootstrap.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css", "~/Content/bootstrap.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(

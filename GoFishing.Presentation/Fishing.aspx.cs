@@ -12,7 +12,7 @@ namespace GoFishing.Presentation
 {
     
 
-    public partial class trip : System.Web.UI.Page
+    public partial class Fishing : System.Web.UI.Page
     {
       
         

@@ -1,16 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="trip.aspx.cs" Inherits="GoFishing.Presentation.trip" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Fishing.aspx.cs" Inherits="GoFishing.Presentation.Fishing" %>
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app="fishingApp">
 <head>
      <asp:PlaceHolder ID="PlaceHolder1" runat="server">        
          <%: Scripts.Render("~/bundles/jquery") %>
+         <%: Scripts.Render("~/bundles/angular") %>
          <%: Styles.Render("~/Content/css") %>
     </asp:PlaceHolder>
-    
+    <base href="/">
 </head>
     
-    <script>
+    <%--<script>
         jQuery(document).ready(function($) {
 
             $("#btnGetTrips").click(function() {
@@ -30,19 +31,21 @@
         });
 
 
-    </script>
+    </script>--%>
 <body>
-   
-    <div class= "container" >
+    <div class="container">
         <div class="row">
-        <div class="col-xs-3">
-    <input type="button" id="btnGetTrips" value="Get"/>
-    </div>
-        <div class="col-xs-3">
-    <input type="button" id="Button1" value="Post"/>
-    </div>
-    </div>
+            <div class="navbar navbar-default">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/Fishing/trip">Trip</a></li>
+                        <li><a href="/Fishing/trophy">Trophies</a></li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
-   
+        <div ng-view></div>
+    </div>
 </body>
 </html>
