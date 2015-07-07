@@ -12,11 +12,11 @@ using GoFishing.Application.Services;
 
 namespace GoFishing.Presentation
 {
-    
+   
     public partial class PropertyInjection : System.Web.UI.Page
     {
-        //[Wire] 
-        private readonly IFishingService _fishingService;
+        [Wire]
+        public  IFishingService FishingService { get; set; }
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,14 +24,13 @@ namespace GoFishing.Presentation
         }
         protected override void OnPreInit(EventArgs e)
         {
-             
-            //_container.Kernel.InjectProperties(this);
+            Global.Container.Kernel.InjectProperties(this);
             base.OnPreInit(e);
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            var result = FishingService.GetTrips();
         }
     }
 }

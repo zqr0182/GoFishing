@@ -162,7 +162,7 @@
     <Content Include="App\js\fishingSvc.js" />
     <Content Include="App\templates\trophy.html" />
     <Content Include="App\templates\trip.html" />
-    <Content Include="App_Code\CastleWindsorExtensions.cs" />
+    <Compile Include="App_Code\CastleWindsorExtensions.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />

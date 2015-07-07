@@ -19,9 +19,9 @@ namespace GoFishing.Presentation
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 
-    public class WebApiApplication : System.Web.HttpApplication
+    public class Global : System.Web.HttpApplication
     {
-        private static IWindsorContainer _container;
+        public static IWindsorContainer Container;
         
         protected void Application_Start()
         {
@@ -37,12 +37,12 @@ namespace GoFishing.Presentation
 
         private static void BootstrapContainer()
         {
-            _container = new WindsorContainer().Install(FromAssembly.This(),
+            Container = new WindsorContainer().Install(FromAssembly.This(),
                                                         FromAssembly.Containing<RepositoryInstaller>(),
                                                         FromAssembly.Containing<WebApiInstaller>(),
                                                         FromAssembly.Containing<ServicesInstaller>());
-        
-            GlobalConfiguration.Configuration.DependencyResolver = new WebApiInstaller.WindsorWebApiDependencyResolver(_container.Kernel);
+
+            GlobalConfiguration.Configuration.DependencyResolver = new WebApiInstaller.WindsorWebApiDependencyResolver(Container.Kernel);
         }
     }
 }
