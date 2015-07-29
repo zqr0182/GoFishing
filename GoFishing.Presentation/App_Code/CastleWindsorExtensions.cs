@@ -15,12 +15,12 @@ namespace GoFishing.Presentation
     }
     public static class CastleWindsorExtensions
     {
-        private static readonly Type _wireAttributeType = typeof(WireAttribute);
+        private static readonly Type WireAttributeType = typeof(WireAttribute);
 
         public static void InjectProperties(this IKernel kernel, object target)
         {
             var type = target.GetType();
-            var properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance).Where(p => p.GetCustomAttributes(true).Any(a => a.GetType() == _wireAttributeType)).ToList();
+            var properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance).Where(p => p.GetCustomAttributes(true).Any(a => a.GetType() == WireAttributeType)).ToList();
             foreach (var property in properties)
             {
                 if (property.CanWrite && kernel.HasComponent(property.PropertyType))

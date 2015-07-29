@@ -3,14 +3,20 @@
 
 <html ng-app="fishingApp">
 <head>
-     <asp:PlaceHolder ID="PlaceHolder1" runat="server">        
+     <%--<asp:PlaceHolder ID="PlaceHolder1" runat="server">        
          <%: Scripts.Render("~/bundles/jquery") %>
          <%: Scripts.Render("~/bundles/angular") %>
          <%: Styles.Render("~/Content/css") %>
-    </asp:PlaceHolder>
+    </asp:PlaceHolder>--%>
     <base href="/">
 </head>
-    
+<link href="Appbuild/css/styles.min.css" rel="stylesheet" />
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/angular.min.js"></script>
+<script src="Scripts/angular-route.min.js"></script>
+<script src="Scripts/angular-resource.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<script src="Appbuild/js/all.min.js"></script>
     <%--<script>
         jQuery(document).ready(function($) {
 

@@ -157,6 +157,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Appbuild\css\styles.min.css" />
+    <Content Include="Appbuild\htmls\trip.html" />
+    <Content Include="Appbuild\htmls\trophy.html" />
+    <Content Include="Appbuild\js\all.min.js" />
     <Content Include="App\js\app.js" />
     <Content Include="App\js\controllers\trip-controller.js" />
     <Content Include="App\js\fishingSvc.js" />
@@ -168,6 +172,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\GoFishingAPIController.cs" />
+    <Compile Include="Controllers\HttpGet.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -249,6 +254,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="gulpfile.js" />
     <Content Include="PropertyInjection.aspx" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
