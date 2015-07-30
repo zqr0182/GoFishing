@@ -1,0 +1,235 @@
+﻿2015-07-29 11:30:23.183 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:30:23.280 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:30:23.281 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:30:23.281 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:30:23.282 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:30:23.282 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:34:09.948 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:34:10.003 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:34:10.004 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:34:10.004 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:34:10.005 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:34:10.006 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:35:54.029 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:35:54.051 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:35:54.052 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:35:54.053 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:35:54.053 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:35:54.053 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:37:22.454 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:37:22.477 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:37:22.478 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:37:22.478 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:37:22.479 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:37:22.479 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:38:40.913 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:38:40.935 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:38:40.936 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:38:40.937 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:38:40.937 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:38:40.937 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:39:26.635 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:39:26.656 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:39:26.657 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:39:26.657 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:39:26.658 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:39:26.658 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:41:21.320 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:41:21.342 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:41:21.343 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:41:21.343 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:41:21.344 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:41:21.344 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:42:56.308 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:42:56.332 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:42:56.333 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:42:56.333 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:42:56.334 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:42:56.334 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:44:45.490 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:44:45.512 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:44:45.513 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:44:45.513 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:44:45.514 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:44:45.515 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:47:54.589 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:47:54.610 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:47:54.611 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:47:54.611 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:47:54.612 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:47:54.612 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:49:20.390 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:49:20.413 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:49:20.414 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:49:20.414 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:49:20.417 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:49:20.417 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:49:47.731 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 11:49:47.752 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 11:49:47.753 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 11:49:47.753 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 11:49:47.754 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 11:49:47.754 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 11:49:47.901 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/12/2015.
+2015-07-29 12:14:37.670 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:14:37.715 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:14:37.716 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:14:37.716 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:14:37.717 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:14:37.717 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:14:37.874 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:19:05.339 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:19:05.379 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:19:05.379 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:19:05.380 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:19:05.380 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:19:05.380 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:19:05.515 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:27:23.884 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:27:23.923 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:27:23.923 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:27:23.924 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:27:23.924 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:27:23.925 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:27:24.060 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:27:54.454 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:27:54.659 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:27:54.661 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:27:54.663 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:27:54.665 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:27:54.667 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:27:54.823 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:31:00.497 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:31:00.537 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:31:00.538 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:31:00.538 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:31:00.539 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:31:00.539 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:31:00.673 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:47:42.638 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:47:42.755 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:47:42.756 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:47:42.756 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:47:42.756 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:47:42.757 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:47:42.851 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 12:47:42.907 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:47:42.926 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 12:47:42.927 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 12:47:42.939 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-07-29 12:48:12.813 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:48:12.920 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:48:12.920 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:48:12.921 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:48:12.922 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:48:12.922 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:48:13.018 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 12:48:13.075 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:48:13.093 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 12:48:13.094 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 12:48:13.106 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-07-29 12:50:16.185 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:50:16.279 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:50:16.279 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:50:16.294 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:50:16.294 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:50:16.294 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:50:16.372 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 12:50:16.435 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:50:16.450 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 12:50:16.450 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 12:50:16.450 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-07-29 12:50:52.865 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:50:52.958 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:50:52.958 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:50:52.958 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:50:52.958 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:50:52.958 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:50:53.036 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 12:50:53.099 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:50:53.099 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 12:50:53.099 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 12:50:53.114 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-07-29 12:55:34.432 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:55:34.534 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:55:34.535 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:55:34.535 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:55:34.536 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:55:34.536 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:55:34.629 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 12:55:34.683 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 12:55:34.700 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 12:55:34.701 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 12:55:34.713 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-07-29 12:56:05.879 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 12:56:05.919 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 12:56:05.920 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 12:56:05.920 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 12:56:05.921 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 12:56:05.921 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 12:56:06.056 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 13:04:18.944 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 13:04:18.976 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 13:04:18.976 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 13:04:18.976 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 13:04:18.976 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 13:04:18.976 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 13:04:19.100 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 13:05:29.290 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 13:05:29.418 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 13:05:29.418 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 13:05:29.419 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 13:05:29.419 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 13:05:29.420 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 13:05:29.524 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 13:13:46.674 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 13:13:46.715 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 13:13:46.715 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 13:13:46.716 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 13:13:46.716 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 13:13:46.717 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 13:13:46.854 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 13:14:34.413 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 13:14:34.522 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 13:14:34.522 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 13:14:34.522 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 13:14:34.522 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 13:14:34.522 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 13:14:34.600 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 13:14:34.647 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 13:14:34.663 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 13:14:34.663 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 13:14:34.678 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-07-29 13:15:09.187 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 13:15:10.802 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 13:15:10.803 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 13:15:10.805 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 13:15:10.806 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 13:15:10.807 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 13:15:10.911 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 13:15:10.953 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 13:15:10.969 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 13:15:10.970 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 13:15:10.980 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-07-29 13:46:36.852 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 13:46:36.970 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 13:46:36.970 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 13:46:36.970 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 13:46:36.970 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 13:46:36.970 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 13:46:37.064 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 13:46:37.122 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 13:46:37.137 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 13:46:37.137 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 13:46:37.137 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-07-29 13:47:03.387 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-07-29 13:47:21.358 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-07-29 13:47:21.360 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-07-29 13:47:21.362 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-07-29 13:47:21.364 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-07-29 13:47:21.366 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-07-29 13:47:21.473 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-07-29 13:47:21.516 INFO  NServiceBus.Licensing.LicenseManager Trial for Particular Service Platform is still active, trial expires on 8/11/2015.
+2015-07-29 13:47:21.530 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-07-29 13:47:21.532 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-07-29 13:47:21.543 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.

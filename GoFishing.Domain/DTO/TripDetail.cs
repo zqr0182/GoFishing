@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace GoFishing.Domain.DTO
 {
+    [Serializable]
     public class Trip
     {
         public int Id { get; set; }

@@ -11,7 +11,7 @@ var uglify = require('gulp-uglify');
 
 gulp.task('minify-html', function () {
     var opts = { empty: true, quotes: true };
-    var htmlPath = { htmlSrc: './App/templates/*.html', htmlDest: './Appbuild/htmls/' };
+    var htmlPath = { htmlSrc: ['./App/templates/*.html'], htmlDest: './Appbuild/htmls/' };
 
     return gulp.src(htmlPath.htmlSrc)
         .pipe(changed(htmlPath.htmlDest))
@@ -42,4 +42,13 @@ gulp.task('bundle-scripts', function () {
         .pipe(gulp.dest(jsPath.jsDest));
 });
 
-gulp.task('default', ['minify-html', 'minify-css', 'bundle-scripts']);
+gulp.task('watch', function() {
+
+    gulp.watch('./App/templates/*.html', 'minify-html');
+    gulp.watch(['./Content/*.css', '!*.min.css', '!/**/*min.css'], 'minify-css');
+    gulp.watch(['./Scripts/jquery-1.9.1.min.js', './Scripts/angular.min.js', './Scripts/angular-resource.min.js', './Scripts/angular-route.min.js', './Scripts/bootstrap.min.js', './App/**/*.js'], 'bundle-scripts');
+});
+
+
+gulp.task('default', ['minify-html', 'minify-css', 'bundle-scripts', 'watch']);
+ 

@@ -14,6 +14,8 @@ using GoFishing.Application.Services;
 using GoFishing.Presentation.Installers;
 using GoFishing.Repository.Installers;
 
+using NServiceBus;
+
 namespace GoFishing.Presentation
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -22,7 +24,9 @@ namespace GoFishing.Presentation
     public class Global : System.Web.HttpApplication
     {
         public static IWindsorContainer Container;
-        
+
+        public static IBus Bus { get; set; }
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -33,6 +37,17 @@ namespace GoFishing.Presentation
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             BootstrapContainer();
+
+            var busConfiguration = new BusConfiguration();
+            busConfiguration.EndpointName("GoFishing.NServicebusHost");
+            busConfiguration.UseSerialization<XmlSerializer>();
+            busConfiguration.EnableInstallers();
+            busConfiguration.UsePersistence<InMemoryPersistence>();
+
+            busConfiguration.UseContainer<WindsorBuilder>(c => c.ExistingContainer(Container));
+
+            Bus = NServiceBus.Bus.Create(busConfiguration).Start();
+ 
         }
 
         private static void BootstrapContainer()
@@ -40,6 +55,7 @@ namespace GoFishing.Presentation
             Container = new WindsorContainer().Install(FromAssembly.This(),
                                                         FromAssembly.Containing<RepositoryInstaller>(),
                                                         FromAssembly.Containing<WebApiInstaller>(),
+                                                        FromAssembly.Containing<NServicebusMessageInstaller>(),
                                                         FromAssembly.Containing<ServicesInstaller>());
 
             GlobalConfiguration.Configuration.DependencyResolver = new WebApiInstaller.WindsorWebApiDependencyResolver(Container.Kernel);

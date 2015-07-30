@@ -3,5 +3,5 @@
     $routeProvider.when('/Fishing/trip', { templateUrl: '/Appbuild/htmls/trip.html', controller: 'TripController' });
     $routeProvider.when('/Fishing/trophy', { templateUrl: '/Appbuild/htmls/trophy.html', controller: 'TrophyController' });
      
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true); 
 }]);
