@@ -9,7 +9,8 @@
         fishingService.listAllTrips(tripParameters).$promise.then(
             function (result) {
                 $scope.bindResult(result);
-            },
+
+          },
             function (error) {
                 $scope.bindResult(error);;
             });

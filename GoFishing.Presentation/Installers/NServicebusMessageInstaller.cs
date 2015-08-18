@@ -15,7 +15,7 @@ namespace GoFishing.Presentation.Installers
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
 
-            container.Register(Classes.FromAssemblyContaining<GoFishing.NServicebusMessage.Event>()
+            container.Register(Classes.FromAssemblyContaining<GoFishing.NServicebusMessage.EventMessage>()
                                    .Where(type => !type.IsInterface)
                                    .WithServiceDefaultInterfaces()
                                    .LifestylePerWebRequest()

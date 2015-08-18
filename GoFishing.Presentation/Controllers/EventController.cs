@@ -14,9 +14,9 @@ namespace GoFishing.Presentation.Controllers
     public class EventController : ApiController
     {
 
-        public Event Get()
+        public EventMessage Get()
         {
-            var msg = new Event
+            var msg = new EventMessage
                 {
                     Trip = new Trip
                     {

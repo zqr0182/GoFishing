@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace GoFishing.NServicebusHost
 {
-    public class EventMessageHandler : IHandleMessages<Event>
+    public class EventMessageHandler : IHandleMessages<EventMessage>
     {
-        public void Handle(Event message)
+        public void Handle(EventMessage message)
         {
             Console.WriteLine("Event received: trip name: " + message.Trip.BoatName);
         }

@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Castle.Facilities.Logging;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using Castle.Windsor.Installer;
@@ -38,8 +40,14 @@ namespace GoFishing.Presentation
 
             BootstrapContainer();
 
+            ConfigNServicebus();
+
+        }
+
+        private static void ConfigNServicebus()
+        {
             var busConfiguration = new BusConfiguration();
-            busConfiguration.EndpointName("GoFishing.NServicebusHost");
+            busConfiguration.EndpointName(ConfigurationManager.AppSettings["NServicebusEndpointName"]);
             busConfiguration.UseSerialization<XmlSerializer>();
             busConfiguration.EnableInstallers();
             busConfiguration.UsePersistence<InMemoryPersistence>();
@@ -47,7 +55,6 @@ namespace GoFishing.Presentation
             busConfiguration.UseContainer<WindsorBuilder>(c => c.ExistingContainer(Container));
 
             Bus = NServiceBus.Bus.Create(busConfiguration).Start();
- 
         }
 
         private static void BootstrapContainer()
@@ -57,7 +64,7 @@ namespace GoFishing.Presentation
                                                         FromAssembly.Containing<WebApiInstaller>(),
                                                         FromAssembly.Containing<NServicebusMessageInstaller>(),
                                                         FromAssembly.Containing<ServicesInstaller>());
-
+            Container.AddFacility<LoggingFacility>(f => f.UseNLog());
             GlobalConfiguration.Configuration.DependencyResolver = new WebApiInstaller.WindsorWebApiDependencyResolver(Container.Kernel);
         }
     }

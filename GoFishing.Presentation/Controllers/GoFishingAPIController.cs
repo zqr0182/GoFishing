@@ -5,24 +5,25 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
+using Castle.Core.Logging;
 using GoFishing.Application.Services;
 using GoFishing.Domain.DTO;
-using NLog;
 
 namespace GoFishing.Presentation.Controllers
 {
     public class GoFishingAPIController : ApiController
     {
         private readonly IFishingService _fishingService;
-        public static Logger Logger = LogManager.GetCurrentClassLogger();
+        private readonly ILogger _logger;
 
-        public GoFishingAPIController(IFishingService fishingService)
+        public GoFishingAPIController(IFishingService fishingService, ILogger logger)
         {
             _fishingService = fishingService;
+            _logger = logger;
         }
 
         [System.Web.Http.ActionName("ListAllTrips")]
-        public HttpResponseMessage GetListAllProjects()
+        public List<Domain.Models.Trip> GetListAllTrips()
         {
             
             try
@@ -30,14 +31,16 @@ namespace GoFishing.Presentation.Controllers
 
                 var result = _fishingService.GetTrips();
 
+                _logger.Info(result.Count.ToString());
 
-                return Request.CreateResponse(HttpStatusCode.OK, result);
+                return result;
 
             }
             catch (Exception ex)
             {
-                Logger.Error(ex.Message);
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex);
+                _logger.Error(ex.Message);
+
+                return null;
             }
         }
 
@@ -56,7 +59,7 @@ namespace GoFishing.Presentation.Controllers
             }
             catch (Exception ex)
             {
-                Logger.Error(ex.Message);
+                _logger.Error(ex.Message);
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ex);
             }
         }

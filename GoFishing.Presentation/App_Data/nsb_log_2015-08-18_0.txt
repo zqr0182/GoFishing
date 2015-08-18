@@ -1,0 +1,2970 @@
+﻿2015-08-18 08:54:06.523 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 08:54:06.910 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 08:54:06.911 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 08:54:06.912 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 08:54:06.912 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 08:54:06.913 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 08:54:07.692 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 08:54:07.795 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 08:54:07.817 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 08:54:07.818 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 08:54:07.830 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 08:54:07.929 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 08:54:08.162 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 08:54:08.237 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 08:54:08.382 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:08.387 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:08.391 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:08.401 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:08.405 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:08.563 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:54:08.614 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:54:08.615 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:54:08.615 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:54:08.618 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 08:54:08.620 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 08:54:08.622 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 08:54:10.167 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 08:54:10.276 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 08:54:10.276 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 08:54:10.277 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 08:54:10.278 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 08:54:10.278 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 08:54:10.375 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 08:54:10.430 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 08:54:10.449 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 08:54:10.450 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 08:54:10.462 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 08:54:10.508 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 08:54:10.598 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 08:54:10.631 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 08:54:10.669 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:10.673 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:10.677 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:10.686 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:10.690 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:54:10.719 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:54:10.736 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:54:10.736 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:54:10.737 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:54:10.741 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 08:54:10.742 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 08:54:10.745 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 08:59:32.751 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 08:59:32.862 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 08:59:32.863 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 08:59:32.864 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 08:59:32.864 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 08:59:32.865 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 08:59:32.962 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 08:59:33.018 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 08:59:33.036 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 08:59:33.037 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 08:59:33.049 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 08:59:33.094 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 08:59:33.183 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 08:59:33.214 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 08:59:33.258 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:59:33.263 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:59:33.267 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:59:33.277 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:59:33.281 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 08:59:33.309 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:59:33.330 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:59:33.330 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:59:33.330 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 08:59:33.338 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 08:59:33.339 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 08:59:33.340 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:01:17.891 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 09:01:18.001 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 09:01:18.001 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 09:01:18.002 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 09:01:18.003 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 09:01:18.003 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 09:01:18.099 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 09:01:18.155 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 09:01:18.173 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 09:01:18.174 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 09:01:18.190 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 09:01:18.237 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 09:01:18.326 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 09:01:18.357 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 09:01:18.396 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:01:18.400 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:01:18.404 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:01:18.413 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:01:18.418 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:01:18.444 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:01:18.461 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:01:18.462 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:01:18.461 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:01:18.466 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:01:18.467 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:01:18.468 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:15:24.295 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 09:15:24.392 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 09:15:24.393 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 09:15:24.393 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 09:15:24.394 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 09:15:24.394 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 09:15:24.489 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 09:15:24.542 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 09:15:24.560 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 09:15:24.561 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 09:15:24.573 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 09:15:24.616 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 09:15:24.701 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 09:15:24.732 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 09:15:24.772 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:15:24.777 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:15:24.781 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:15:24.790 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:15:24.794 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:15:24.821 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:15:24.839 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:15:24.839 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:15:24.839 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:15:24.843 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:15:24.848 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:15:24.849 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:18:06.897 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 09:18:06.991 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 09:18:06.991 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 09:18:06.991 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 09:18:06.991 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 09:18:06.991 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 09:18:07.069 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 09:18:07.116 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 09:18:07.131 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 09:18:07.147 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 09:18:07.147 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 09:18:07.194 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 09:18:07.272 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 09:18:07.319 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 09:18:07.350 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:18:07.350 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:18:07.350 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:18:07.365 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:18:07.365 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:18:07.397 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:18:07.412 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:18:07.412 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:18:07.412 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:18:07.412 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:18:07.428 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:18:07.428 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:22:44.450 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 09:22:44.547 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 09:22:44.548 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 09:22:44.549 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 09:22:44.549 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 09:22:44.550 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 09:22:44.641 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 09:22:44.695 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 09:22:44.712 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 09:22:44.713 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 09:22:44.725 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 09:22:44.768 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 09:22:44.855 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 09:22:44.886 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 09:22:44.925 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:22:44.929 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:22:44.933 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:22:44.941 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:22:44.946 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:22:44.972 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:22:44.990 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:22:44.990 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:22:44.990 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:22:44.994 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:22:44.996 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:22:44.998 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:27:37.671 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 09:27:37.768 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 09:27:37.769 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 09:27:37.769 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 09:27:37.770 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 09:27:37.770 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 09:27:37.864 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 09:27:37.917 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 09:27:37.934 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 09:27:37.935 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 09:27:37.947 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 09:27:37.990 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 09:27:38.076 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 09:27:38.108 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 09:27:38.144 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:27:38.148 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:27:38.152 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:27:38.161 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:27:38.165 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:27:38.192 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:27:38.211 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:27:38.211 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:27:38.211 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:27:38.217 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:27:38.220 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:27:38.222 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:33:24.651 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 09:33:24.701 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 09:33:24.701 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 09:33:24.702 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 09:33:24.702 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 09:33:24.703 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 09:33:24.751 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 09:33:24.787 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 09:33:24.790 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 09:33:24.791 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 09:33:24.798 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 09:33:24.813 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 09:33:24.865 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 09:33:24.882 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 09:33:24.908 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:33:24.911 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:33:24.914 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:33:24.918 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:33:24.921 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 09:33:24.933 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:33:24.952 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:33:24.952 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:33:24.952 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 09:33:24.957 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:33:24.960 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 09:33:24.961 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 11:04:56.421 INFO  DefaultFactory Logging to 'C:\TestProjects\GoFishing\GoFishing.Presentation\App_Data\' with level Info
+2015-08-18 11:04:56.525 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-08-18 11:04:56.526 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-08-18 11:04:56.527 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-08-18 11:04:56.527 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-08-18 11:04:56.528 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-08-18 11:04:56.616 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Faults.Forwarder.Config.FaultsQueueCreator was already registered in the container.
+2015-08-18 11:04:56.682 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2015-08-18 11:04:56.701 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor was already registered in the container.
+2015-08-18 11:04:56.702 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor was already registered in the container.
+2015-08-18 11:04:56.715 INFO  NServiceBus.ObjectBuilder.CastleWindsor.WindsorObjectBuilder Component NServiceBus.LicenseBehavior was already registered in the container.
+2015-08-18 11:04:56.760 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2015-08-18 11:04:56.850 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManager]
+Startup Tasks: None
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: [TimeoutManagerBasedDeferral]
+Startup Tasks: None
+
+Name: Sagas
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.3
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.3
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.3
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2015-08-18 11:04:56.883 INFO  NServiceBus.PerformanceMonitorUsersInstaller Did not attempt to add user 'IIS APPPOOL\GoFishing' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "IIS APPPOOL\GoFishing" /add
+2015-08-18 11:04:56.933 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Retries@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 11:04:56.937 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.TimeoutsDispatcher@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 11:04:56.941 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost.Timeouts@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 11:04:56.951 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue error@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 11:04:56.955 ERROR NServiceBus.Transports.Msmq.MsmqQueueCreator Could not create queue GoFishing.NServicebusHost@TOM or check its existence. Processing will still continue.
+System.Messaging.MessageQueueException (0x80004005): Access to Message Queuing system is denied.
+   at System.Messaging.MessageQueue.SetPermissions(AccessControlList dacl)
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.SetPermissionsForQueue(String queuePath, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 96
+   at NServiceBus.Transports.Msmq.MsmqQueueCreator.CreateQueueIfNecessary(Address address, String account) in c:\BuildAgent\work\3206e2123f54fce4\src\NServiceBus.Core\Transports\Msmq\MsmqQueueCreator.cs:line 51
+2015-08-18 11:04:56.984 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 11:04:57.003 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 11:04:57.003 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 11:04:57.003 INFO  NServiceBus.PerformanceCounterHelper NServiceBus performance counter for '# of msgs successfully processed / sec' is not set up correctly. To rectify this problem see http://docs.particular.net/search?q=PerformanceCounters.
+2015-08-18 11:04:57.008 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/3 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 11:04:57.012 INFO  NServiceBus.Satellites.SatelliteLauncher Started 3/3 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-08-18 11:04:57.014 INFO  NServiceBus.Satellites.SatelliteLauncher Started 2/3 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
