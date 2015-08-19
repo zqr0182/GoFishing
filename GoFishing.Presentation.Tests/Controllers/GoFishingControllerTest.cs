@@ -14,27 +14,21 @@ using GoFishing.Domain.Models;
 
 namespace GoFishing.Presentation.Tests.Controllers
 {
-    public interface IMockLogger : ILogger
-    {
-        string Message {get; set;}
-
-    }
  
     [TestClass]
     public class GoFishingControllerTest
     {
         
-        private readonly GoFishingAPIController _goFishingApiController;
-        private readonly Mock<IFishingService> _fishingServiceMock;
-        private readonly Mock<IMockLogger> _loggerMock;
-        const string ExpectedMessage = "message to log";
-        const string ExceptionMessage = "exception message to log";
+        private  GoFishingAPIController _goFishingApiController;
+        private  Mock<IFishingService> _fishingServiceMock;
+        private Mock<ILogger> _loggerMock;
+        const string ExceptionMessage = "exception message";
 
-
-        public GoFishingControllerTest()
+        [TestInitialize]
+        public void Init()
         {
             _fishingServiceMock = new Mock<IFishingService>();
-            _loggerMock = new Mock<IMockLogger>();
+            _loggerMock = new Mock<ILogger>();
             _goFishingApiController = new GoFishingAPIController(_fishingServiceMock.Object, _loggerMock.Object);
         }
         
@@ -51,14 +45,14 @@ namespace GoFishing.Presentation.Tests.Controllers
         }
 
         [TestMethod]
-        public void GetListAllTrips_Write_To_Log()
+        public void GetListAllTrips_Write_Info_To_Log()
         {
 
-            _loggerMock.SetupProperty(l => l.Message, ExpectedMessage);
+            _fishingServiceMock.Setup(f => f.GetTrips()).Returns(SetupTrips());
 
-            _fishingServiceMock.Object.GetTrips();
+            _goFishingApiController.GetListAllTrips();
 
-            Assert.AreEqual(ExpectedMessage, _loggerMock.Object.Message);
+            _loggerMock.Verify(l => l.Info(It.IsAny<string>()), Times.Once);
         }
 
         [TestMethod]
@@ -66,19 +60,23 @@ namespace GoFishing.Presentation.Tests.Controllers
         {
             _fishingServiceMock.Setup(f => f.GetTrips()).Throws(new Exception(ExceptionMessage));
 
+            _goFishingApiController.GetListAllTrips();
+
             AssertException.Throws<Exception>(() => _fishingServiceMock.Object.GetTrips());
         }
 
-
         [TestMethod]
-        public void GetListAllTrips_GetTrips_ThrowException_Write_Log()
+        public void GetListAllTrips_GetTrips_Write_Error_To_Log()
         {
-            _loggerMock.SetupProperty(l => l.Message, ExceptionMessage);
-            
             _fishingServiceMock.Setup(f => f.GetTrips()).Throws(new Exception(ExceptionMessage));
 
-            Assert.AreEqual(ExceptionMessage, _loggerMock.Object.Message);
+            _goFishingApiController.GetListAllTrips();
+
+            _loggerMock.Verify(l => l.Error(It.IsAny<string>()), Times.Once);
+
         }
+
+        #region Helper methods
 
         public static class AssertException
         {
@@ -110,6 +108,8 @@ namespace GoFishing.Presentation.Tests.Controllers
             trips.Add(trip);
 
             return trips;
-        }
+        } 
+
+        #endregion
     }
 }
