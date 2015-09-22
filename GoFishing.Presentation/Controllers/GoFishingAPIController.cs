@@ -4,13 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Web.Mvc;
 using Castle.Core.Logging;
 using GoFishing.Application.Services;
 using GoFishing.Domain.DTO;
 
 namespace GoFishing.Presentation.Controllers
 {
+    [Authorize]
     public class GoFishingAPIController : ApiController
     {
         private readonly IFishingService _fishingService;
@@ -22,7 +22,7 @@ namespace GoFishing.Presentation.Controllers
             _logger = logger;
         }
 
-        [System.Web.Http.ActionName("ListAllTrips")]
+        [ActionName("ListAllTrips")]
         public List<Domain.Models.Trip> GetListAllTrips()
         {
             
@@ -44,7 +44,7 @@ namespace GoFishing.Presentation.Controllers
             }
         }
 
-        [System.Web.Http.ActionName("TripDetail")]
+        [ActionName("TripDetail")]
         public HttpResponseMessage GetTripDetail([FromUri] Trip tripParameters)
         {
 
