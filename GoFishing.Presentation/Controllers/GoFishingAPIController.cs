@@ -7,6 +7,8 @@ using System.Web.Http;
 using Castle.Core.Logging;
 using GoFishing.Application.Services;
 using GoFishing.Domain.DTO;
+using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace GoFishing.Presentation.Controllers
 {
@@ -22,10 +24,12 @@ namespace GoFishing.Presentation.Controllers
             _logger = logger;
         }
 
+        [AllowAnonymous]
         [ActionName("ListAllTrips")]
-        public List<Domain.Models.Trip> GetListAllTrips()
+        [HttpGet]
+        public async Task<IEnumerable<Domain.Models.Trip>> ListAllTrips()
         {
-            
+
             try
             {
 
@@ -43,9 +47,10 @@ namespace GoFishing.Presentation.Controllers
                 return null;
             }
         }
-
+        [AllowAnonymous]
         [ActionName("TripDetail")]
-        public HttpResponseMessage GetTripDetail([FromUri] Trip tripParameters)
+        [HttpGet]
+        public async Task<HttpResponseMessage> TripDetail([FromUri] Trip tripParameters)
         {
 
             try
@@ -53,8 +58,30 @@ namespace GoFishing.Presentation.Controllers
 
                 var result = _fishingService.GetTripDetail(tripParameters.Id);
 
+                 return Request.CreateResponse(HttpStatusCode.OK, result);
 
-                return Request.CreateResponse(HttpStatusCode.OK, result);
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex.Message);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex);
+            }
+        }
+
+        [AllowAnonymous]
+        [ActionName("AddTrip")]
+        [HttpPost]
+        public async Task<HttpResponseMessage> AddTrip([FromBody] GoFishing.Domain.Models.Trip tripParameters)
+        {
+
+            try
+            {
+                tripParameters.Date = DateTime.Now;
+                tripParameters.CreationDate = DateTime.Now;
+                
+                _fishingService.AddTrip(tripParameters);
+
+                return Request.CreateResponse(HttpStatusCode.OK, "New trip added");
 
             }
             catch (Exception ex)
@@ -93,4 +120,5 @@ namespace GoFishing.Presentation.Controllers
         //{
         //}
     }
+
 }

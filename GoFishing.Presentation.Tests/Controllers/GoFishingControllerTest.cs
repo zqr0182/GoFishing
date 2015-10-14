@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Web.Http;
 using GoFishing.Application.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Castle.Core.Logging;
-using GoFishing.Presentation;
 using GoFishing.Presentation.Controllers;
 using GoFishing.Domain.Models;
+using System.Threading.Tasks;
 
 namespace GoFishing.Presentation.Tests.Controllers
 {
@@ -31,46 +27,45 @@ namespace GoFishing.Presentation.Tests.Controllers
             _loggerMock = new Mock<ILogger>();
             _goFishingApiController = new GoFishingAPIController(_fishingServiceMock.Object, _loggerMock.Object);
         }
-        
+
         [TestMethod]
-        public void GetListAllTrips_GetTrips()
+        public async Task GetListAllTrips_GetTrips()
         {
             _fishingServiceMock.Setup(f => f.GetTrips()).Returns(SetupTrips());
 
-            var result = _goFishingApiController.GetListAllTrips();
-
+            var result = await _goFishingApiController.ListAllTrips() as List<Domain.Models.Trip>;
             Assert.AreEqual("abcd", result[0].BoatName);
             Assert.AreEqual(new DateTime(), result[0].Date);
-           
+
         }
 
         [TestMethod]
-        public void GetListAllTrips_Write_Info_To_Log()
+        public async Task GetListAllTrips_Write_Info_To_Log()
         {
 
             _fishingServiceMock.Setup(f => f.GetTrips()).Returns(SetupTrips());
 
-            _goFishingApiController.GetListAllTrips();
+            await _goFishingApiController.ListAllTrips();
 
             _loggerMock.Verify(l => l.Info(It.IsAny<string>()), Times.Once);
         }
 
         [TestMethod]
-        public void GetListAllTrips_GetTrips_ThrowException()
+        public async Task GetListAllTrips_GetTrips_ThrowException()
         {
             _fishingServiceMock.Setup(f => f.GetTrips()).Throws(new Exception(ExceptionMessage));
 
-            _goFishingApiController.GetListAllTrips();
+            await _goFishingApiController.ListAllTrips();
 
             AssertException.Throws<Exception>(() => _fishingServiceMock.Object.GetTrips());
         }
 
         [TestMethod]
-        public void GetListAllTrips_GetTrips_Write_Error_To_Log()
+        public async Task GetListAllTrips_GetTrips_Write_Error_To_Log()
         {
             _fishingServiceMock.Setup(f => f.GetTrips()).Throws(new Exception(ExceptionMessage));
 
-            _goFishingApiController.GetListAllTrips();
+            await _goFishingApiController.ListAllTrips();
 
             _loggerMock.Verify(l => l.Error(It.IsAny<string>()), Times.Once);
 

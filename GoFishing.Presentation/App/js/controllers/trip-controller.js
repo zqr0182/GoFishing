@@ -5,12 +5,13 @@
     
 
     
-    $scope.listAllTrips = function (tripParameters) {
+     $scope.listAllTrips = function (tripParameters) {
+
         fishingService.listAllTrips(tripParameters).$promise.then(
             function (result) {
                 $scope.bindResult(result);
 
-          },
+            },
             function (error) {
                 $scope.bindResult(error);;
             });
@@ -18,6 +19,17 @@
     
     $scope.getTrip = function (tripParameters) {
         fishingService.getTrip(tripParameters).$promise.then(
+            function (result) {
+                $scope.bindResult(result);
+            },
+            function (error) {
+                $scope.bindResult(error);;
+            });
+    };
+
+    $scope.addTrip = function (tripParameters) {
+        tripParameters.type = 'POST';
+        fishingService.addTrip(tripParameters).$promise.then(
             function (result) {
                 $scope.bindResult(result);
             },

@@ -14,6 +14,8 @@ namespace GoFishing.Application.Services
         List<Trip> GetTrips();
 
         Trip GetTripDetail(int id);
+
+        void AddTrip(Trip trip);
     }
 
     public class FishingService : IFishingService
@@ -34,6 +36,12 @@ namespace GoFishing.Application.Services
         public Trip GetTripDetail(int id)
         {
             return _unitOfWork.Trips.MatcheById(id);
+        }
+
+        public void AddTrip(Trip trip)
+        {
+            _unitOfWork.Trips.Add(trip);
+            _unitOfWork.Commit();
         }
     }
 }
