@@ -18,6 +18,7 @@
             return invoke($resource, tripParameters, 'TripDetail'); 
         },
         addTrip: function (tripParameters) {
+            
             return invoke($resource, tripParameters, 'AddTrip'); 
         },
     };

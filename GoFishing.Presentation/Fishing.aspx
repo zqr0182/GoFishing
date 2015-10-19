@@ -6,36 +6,16 @@
     <base href="/">
 </head>
 <link href="Appbuild/css/styles.min.css" rel="stylesheet" />
-<script src="Scripts/jquery-2.1.4.min.js"></script>
+<%--<script src="Scripts/jquery-2.1.4.min.js"></script>
 <script src="Scripts/angular.min.js"></script>
 <script src="Scripts/angular-resource.min.js"></script>
 <script src="Scripts/angular-route.min.js"></script>
 <script src="Scripts/bootstrap.min.js"></script>
 <script src="App/js/app.js"></script>
 <script src="App/js/fishingSvc.js"></script>
-<script src="App/js/controllers/trip-controller.js"></script>
-<%--<script src="Appbuild/js/all.min.js"></script>--%>
-    <%--<script>
-        jQuery(document).ready(function($) {
-
-            $("#btnGetTrips").click(function() {
-
-                $.ajax({
-                    url: '/api/GoFishingAPI',
-                    type: 'GET',
-                    dataType: 'json',
-                    success: function (data) {
-                        alert("fff");
-                    },
-                    error: function (x, y, z) {
-                        alert(x + '\n' + y + '\n' + z);
-                    }
-                });
-            });
-        });
-
-
-    </script>--%>
+<script src="App/js/controllers/trip-controller.js"></script>--%>
+<script src="Appbuild/js/all.min.js"></script>
+    
 <body>
     <div class="container">
         <div class="row">

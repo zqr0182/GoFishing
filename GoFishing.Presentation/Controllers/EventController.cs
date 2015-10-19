@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using NServiceBus;
 
-using GoFishing.Domain.DTO;
+using GoFishing.Domain.Models;
 using GoFishing.NServicebusMessage;
 
 namespace GoFishing.Presentation.Controllers

@@ -1,5 +1,5 @@
 ﻿using System;
-using GoFishing.Domain.DTO;
+using GoFishing.Domain.Models;
 using NServiceBus;
 
 namespace GoFishing.NServicebusMessage

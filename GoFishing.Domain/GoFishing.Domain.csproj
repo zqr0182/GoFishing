@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\TripDetail.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Models\Trip.cs" />
     <Compile Include="Models\Trophy.cs" />

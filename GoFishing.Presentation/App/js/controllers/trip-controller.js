@@ -31,7 +31,7 @@
         tripParameters.type = 'POST';
         fishingService.addTrip(tripParameters).$promise.then(
             function (result) {
-                $scope.bindResult(result);
+                $scope.result = angular.toJson(result, true)
             },
             function (error) {
                 $scope.bindResult(error);;

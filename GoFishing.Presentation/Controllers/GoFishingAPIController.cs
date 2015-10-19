@@ -6,9 +6,9 @@ using System.Net.Http;
 using System.Web.Http;
 using Castle.Core.Logging;
 using GoFishing.Application.Services;
-using GoFishing.Domain.DTO;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
+using GoFishing.Domain.Models;
 
 namespace GoFishing.Presentation.Controllers
 {
@@ -27,7 +27,7 @@ namespace GoFishing.Presentation.Controllers
         [AllowAnonymous]
         [ActionName("ListAllTrips")]
         [HttpGet]
-        public async Task<IEnumerable<Domain.Models.Trip>> ListAllTrips()
+        public async Task<IEnumerable<Trip>> ListAllTrips()
         {
 
             try
@@ -71,7 +71,7 @@ namespace GoFishing.Presentation.Controllers
         [AllowAnonymous]
         [ActionName("AddTrip")]
         [HttpPost]
-        public async Task<HttpResponseMessage> AddTrip([FromBody] GoFishing.Domain.Models.Trip tripParameters)
+        public async Task<HttpResponseMessage> AddTrip([FromBody] Trip tripParameters)
         {
 
             try
@@ -81,7 +81,7 @@ namespace GoFishing.Presentation.Controllers
                 
                 _fishingService.AddTrip(tripParameters);
 
-                return Request.CreateResponse(HttpStatusCode.OK, "New trip added");
+                return Request.CreateResponse(HttpStatusCode.OK, new Result { Message = "New trip added" });
 
             }
             catch (Exception ex)
@@ -119,6 +119,11 @@ namespace GoFishing.Presentation.Controllers
         //public void Delete(int id)
         //{
         //}
+    }
+
+    public class Result
+    {
+        public string Message { get; set; }
     }
 
 }

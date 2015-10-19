@@ -14,6 +14,7 @@ namespace GoFishing.Domain.Models
         [Key]
         [Column("id")]
         public int Id { get; set; }
+        [Required]
         [Column("boat_name")]
         [MaxLength(50)]
         public string BoatName { get; set; }

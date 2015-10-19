@@ -7,6 +7,10 @@ var autoprefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
+var sourcemaps = require('gulp-sourcemaps');
+
+var scriptTaskName = 'bundle-scripts-dev';
+//var scriptTaskName = 'bundle-scripts-prod';
 
 
 gulp.task('minify-html', function () {
@@ -32,9 +36,19 @@ gulp.task('minify-css', function () {
 });
 
 
-gulp.task('bundle-scripts', function () {
+gulp.task('bundle-scripts-dev', function () {
 
-    var jsPath = { jsSrc: ['./Scripts/jquery-1.9.1.min.js', './Scripts/angular.min.js', './Scripts/angular-resource.min.js', './Scripts/angular-route.min.js', './Scripts/bootstrap.min.js', './App/**/*.js'], jsDest: './Appbuild/js/' };
+    var jsPath = { jsSrc: ['./Scripts/jquery-2.1.4.min.js', './Scripts/angular.min.js', './Scripts/angular-resource.min.js', './Scripts/angular-route.min.js', './Scripts/bootstrap.min.js', './App/**/*.js'], jsDest: './Appbuild/js/' };
+    gulp.src(jsPath.jsSrc)
+        .pipe(sourcemaps.init())
+        .pipe(concat('all.js'))
+        .pipe(sourcemaps.write())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest(jsPath.jsDest));
+});
+gulp.task('bundle-scripts-prod', function () {
+
+    var jsPath = { jsSrc: ['./Scripts/jquery-2.1.4.min.js', './Scripts/angular.min.js', './Scripts/angular-resource.min.js', './Scripts/angular-route.min.js', './Scripts/bootstrap.min.js', './App/**/*.js'], jsDest: './Appbuild/js/' };
     gulp.src(jsPath.jsSrc)
         .pipe(concat('all.js'))
         .pipe(uglify())
@@ -42,13 +56,14 @@ gulp.task('bundle-scripts', function () {
         .pipe(gulp.dest(jsPath.jsDest));
 });
 
+ 
 gulp.task('watch', function() {
 
     gulp.watch('./App/templates/*.html', 'minify-html');
     gulp.watch(['./Content/*.css', '!*.min.css', '!/**/*min.css'], 'minify-css');
-    gulp.watch(['./Scripts/jquery-1.9.1.min.js', './Scripts/angular.min.js', './Scripts/angular-resource.min.js', './Scripts/angular-route.min.js', './Scripts/bootstrap.min.js', './App/**/*.js'], 'bundle-scripts');
+    gulp.watch(['./Scripts/jquery-2.1.4.min.js', './Scripts/angular.min.js', './Scripts/angular-resource.min.js', './Scripts/angular-route.min.js', './Scripts/bootstrap.min.js', './App/**/*.js'], 'bundle-scripts');
 });
 
 
-gulp.task('default', ['minify-html', 'minify-css', 'bundle-scripts', 'watch']);
+gulp.task('default', ['minify-html', 'minify-css', scriptTaskName, 'watch']);
  
